@@ -2,20 +2,23 @@
 int main()
 {
     char ch;
-    printf("Numbers Ascii values:-");
-    for(ch='0';ch<='9';ch++)
+   printf("Enter the character:");
+   scanf("%c",&ch);
+    if(ch>='0' && ch<='9')
     {
-        printf(" %d",ch);
+        printf("Digit");
     }
-    printf("\nLower letter Ascii values:-");
-     for(ch='a';ch<='z';ch++)
+  
+    else if(ch>='a' && ch<='z')
     {
-        printf(" %d",ch);
+        printf("Small Alphabets");
     }
-     printf("\nUpeer letter Ascii values:-");
-     for(ch='A';ch<='Z';ch++)
+     
+    else if(ch>='A' && ch<='Z')
     {
-        printf(" %d",ch);
+        printf("Upper Alphabets");
     }
+    else
+     printf("Special character");
     return 0;
 }

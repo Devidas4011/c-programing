@@ -6,6 +6,6 @@ int main()
     printf("Enter the letter:-");
     scanf("%c",&ch);
     ch=toupper(ch);
-    printf("Uppercase :%c",ch);    
+    printf("Uppercase :%c",ch);  
     return 0;
 } 
